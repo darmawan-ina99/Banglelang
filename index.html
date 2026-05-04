@@ -38,15 +38,22 @@
         .container { max-width: 700px; margin: 0 auto 50px; padding: 0 20px; }
         .services { display: flex; flex-direction: column; gap: 18px; }
 
-        /* === SEMUA KARTU PAKAI OUTER BORDER KUNING KEEMASAN === */
+        /* === SEMUA KARTU PASTI MEMILIKI OUTER BORDER KUNING === */
         .card {
             background: rgba(20, 20, 20, 0.8);
             backdrop-filter: blur(15px);
-            border: 2px solid var(--gold);
-            border-radius: 15px; padding: 25px; text-align: center;
+            border: 2px solid var(--gold);  /* <-- INI YANG MEMBERI GARIS KUNING */
+            border-radius: 15px; 
+            padding: 25px; 
+            text-align: center;
             transition: all 0.3s;
         }
-        .card:hover { border-color: #e0b867; transform: translateY(-3px); background: rgba(30, 30, 30, 0.85); box-shadow: 0 0 20px rgba(197,160,89,0.3); }
+        .card:hover { 
+            border-color: #e0b867; 
+            transform: translateY(-3px); 
+            background: rgba(30, 30, 30, 0.85); 
+            box-shadow: 0 0 20px rgba(197,160,89,0.3); 
+        }
         .card h3 { color: var(--gold); font-size: 1.3em; margin-bottom: 10px; }
         .card p { color: #BBB; font-size: 0.95em; margin-bottom: 15px; }
 
@@ -78,24 +85,28 @@
     <div class="container">
         <div class="services">
 
+            <!-- KARTU 1: JUAL MOBIL - PASTI ADA BORDER KUNING -->
             <div class="card">
                 <h3>💰 Jual Mobil</h3>
                 <p>Mobil Anda langsung diposting ke marketplace & jaringan pedagang terpercaya.</p>
                 <a href="jual" class="btn btn-gold">📝 Jual Sekarang</a>
             </div>
 
+            <!-- KARTU 2: GADAI BPKB - PASTI ADA BORDER KUNING -->
             <div class="card">
                 <h3>🔒 Gadai BPKB</h3>
                 <p>Dana cepat cair dengan proses mudah, aman, dan transparan.</p>
                 <a href="gadai" class="btn btn-gold">📋 Ajukan Gadai</a>
             </div>
 
+            <!-- KARTU 3: GADAI INSTAN - PASTI ADA BORDER KUNING -->
             <div class="card">
                 <h3>⚡ Gadai Instan</h3>
                 <p>Dana langsung diantar ke rumah Anda! Prioritas, tanpa tunggu lama.</p>
                 <a href="gadai-instan" class="btn btn-gold">⚡ Gadai Instan</a>
             </div>
 
+            <!-- KARTU 4: KIRIM MOBIL - PASTI ADA BORDER KUNING -->
             <div class="card">
                 <h3>🚛 Kirim Mobil</h3>
                 <p>Aman & harga kompetitif ke seluruh Indonesia.</p>
