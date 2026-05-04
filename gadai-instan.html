@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadai Instan — BangLelang</title>
+    <style>
+        :root { --navy: #0a192f; --gold: #c5a059; --white: #fff; --dark: #0A0A0A; --card: #1A1A1A; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--dark); color: var(--white); line-height: 1.6; }
+        nav { background: var(--navy); padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+        nav a { color: var(--white); text-decoration: none; margin: 0 10px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s; }
+        nav a:hover, nav a.active { color: var(--gold); border-bottom: 2px solid var(--gold); padding-bottom: 5px; }
+        .hero { text-align: center; padding: 60px 20px; background: linear-gradient(180deg, #111, #0A0A0A); }
+        .hero h1 { font-size: 2.2em; color: var(--gold); margin-bottom: 10px; }
+        .badge { display: inline-block; background: rgba(197,160,89,0.15); color: var(--gold); padding: 8px 20px; border-radius: 20px; font-size: 0.85em; margin-top: 10px; }
+        .container { max-width: 700px; margin: 30px auto; padding: 20px; }
+        .card { background: var(--card); border: 2px solid var(--gold); border-radius: 15px; padding: 25px; text-align: center; margin-bottom: 20px; }
+        .card h3 { color: var(--gold); font-size: 1.3em; margin-bottom: 10px; }
+        .card p { color: #CCC; font-size: 0.95em; margin-bottom: 15px; }
+        .card ul { text-align: left; color: #BBB; margin-bottom: 20px; padding-left: 20px; }
+        .card ul li { margin-bottom: 8px; }
+        .highlight { background: rgba(197,160,89,0.05); }
+        .btn { display: inline-block; padding: 14px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 0.95rem; transition: all 0.3s; width: 90%; box-sizing: border-box; }
+        .btn-gold { background: linear-gradient(135deg, var(--gold), #c4912a); color: #000; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+        footer { background: var(--navy); text-align: center; padding: 30px 20px; margin-top: 50px; color: #8892b0; font-size: 0.9em; }
+        footer p { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index">🏠 Beranda</a>
+        <a href="jual">💰 Jual</a>
+        <a href="gadai">🔒 Gadai</a>
+        <a href="gadai-instan" class="active">⚡ Gadai Instan</a>
+        <a href="kirim">🚛 Kirim Mobil</a>
+        <a href="tentang">👤 Tentang</a>
+    </nav>
+
+    <header class="hero">
+        <h1>⚡ Gadai Instan</h1>
+        <p>Dana Langsung Diantar ke Rumah Anda</p>
+        <span class="badge">📍 Pasar Baru, Jakarta Pusat</span>
+    </header>
+
+    <div class="container">
+        <div class="card highlight">
+            <h3>⚡ Apa Itu Gadai Instan?</h3>
+            <p>Layanan prioritas di mana tim kami langsung datang ke rumah Anda, melakukan survei, dan membawa dana tunai. Hanya untuk pengajuan dengan nilai realistis.</p>
+        </div>
+
+        <div class="card">
+            <h3>📋 Syarat</h3>
+            <ul>
+                <li>BPKB asli atas nama sendiri</li>
+                <li>KTP pemilik sah</li>
+                <li>STNK asli</li>
+                <li>Mobil di rumah (bisa langsung disurvei)</li>
+                <li>Nilai pinjaman realistis (maks 70% dari harga pasar)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Keunggulan</h3>
+            <ul>
+                <li>Tim langsung datang ke lokasi</li>
+                <li>Dana tunai dibawa langsung</li>
+                <li>Proses dalam hitungan jam (bukan hari)</li>
+                <li>Tidak perlu antri, tidak perlu keluar rumah</li>
+            </ul>
+        </div>
+
+        <a href="https://wa.me/6285811200013?text=Halo%20BangLelang,%20saya%20mau%20Gadai%20Instan" class="btn btn-gold">⚡ Ajukan Gadai Instan Sekarang</a>
+    </div>
+
+    <footer>
+        <p>📍 Pasar Baru, Jakarta Pusat</p>
+        <p>📞 0858-1120-0013</p>
+        <p>© 2024 BangLelang — PT. Suksestama Artha Mobil</p>
+    </footer>
+
+</body>
+</html>
