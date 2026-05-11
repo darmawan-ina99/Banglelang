@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Mobil — BangLelang Premium</title>
+    <link rel="icon" href="assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#f3e5ab',
+                            DEFAULT: '#d4af37',
+                            dark: '#aa8a2e',
+                        },
+                        luxury: {
+                            black: '#050505',
+                            dark: '#0a0a0a',
+                            gray: '#1a1a1a',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(10, 10, 10, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .gold-text {
+            background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #aa8a2e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border {
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .btn-luxury {
+            background: linear-gradient(135deg, #d4af37 0%, #aa8a2e 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-luxury:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-luxury-black text-white font-sans">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/images/logo.png" alt="BangLelang Logo" class="h-12 w-auto">
+                <span class="font-serif text-2xl font-bold tracking-tight gold-text">BangLelang</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-widest uppercase">
+                <a href="index.html" class="hover:text-gold transition-colors">Beranda</a>
+                <a href="jual.html" class="text-gold">Jual Mobil</a>
+                <a href="#" class="hover:text-gold transition-colors">Gadai BPKB</a>
+                <a href="https://wa.me/6285811200013" class="px-6 py-2 border border-gold text-gold hover:bg-gold hover:text-black transition-all duration-300 rounded-full">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-40 pb-20 bg-luxury-dark border-b border-white/5">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="font-serif text-5xl md:text-6xl font-bold mb-6">Jual Mobil <span class="gold-text">Tanpa Ribet</span></h1>
+            <p class="text-gray-400 text-lg leading-relaxed">Proses transparan, pemasaran luas, dan hasil maksimal untuk aset berharga Anda.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="grid gap-12">
+                <!-- Step 1 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start bg-luxury-gray p-10 rounded-3xl gold-border">
+                    <div class="bg-gold/10 text-gold w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold shrink-0">01</div>
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold mb-4">Konsultasi & Data</h3>
+                        <p class="text-gray-400 leading-relaxed">Hubungi kami via WhatsApp dan kirimkan detail mobil Anda (Merk, Tipe, Tahun, KM, Lokasi, dan Foto terbaik).</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start bg-luxury-gray p-10 rounded-3xl gold-border">
+                    <div class="bg-gold/10 text-gold w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold shrink-0">02</div>
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold mb-4">Pemasaran Eksklusif</h3>
+                        <p class="text-gray-400 leading-relaxed">Kami akan memasarkan mobil Anda ke jaringan pedagang dan marketplace premium secara GRATIS.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start bg-luxury-gray p-10 rounded-3xl gold-border">
+                    <div class="bg-gold/10 text-gold w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold shrink-0">03</div>
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold mb-4">Transaksi Sukses</h3>
+                        <p class="text-gray-400 leading-relaxed">Setelah mobil terjual, Anda menerima pembayaran penuh. Komisi hanya dikenakan sesuai kesepakatan awal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center">
+                <a href="https://wa.me/6285811200013?text=Halo%20BangLelang,%20saya%20mau%20jual%20mobil" class="btn-luxury px-12 py-5 rounded-full text-black font-bold text-xl inline-block">
+                    Jual Mobil Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-white/5 bg-luxury-black">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-gray-500 text-sm">© 2026 BangLelang. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
